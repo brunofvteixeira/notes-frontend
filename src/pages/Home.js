@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import CenteredContainer from '../components/CenteredContainer';
 import BookBanner from '../components/BookBanner';
-import Navbar from '../components/Navbar';
+import DefaultPage from '../components/DefaultPage';
 
 // import { getAllBooks } from '../services/api';
 
@@ -38,8 +38,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <Navbar />
+    <DefaultPage>
       <CenteredContainer>
         <BooksContainer>
           {books
@@ -49,6 +48,6 @@ export default function Home() {
             : null}
         </BooksContainer>
       </CenteredContainer>
-    </>
+    </DefaultPage>
   );
 }

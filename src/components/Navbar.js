@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Nav = styled.div`
+const Nav = styled.nav`
   height: 60px;
   padding: 0 20px;
-  margin-bottom: 30px;
 
   display: grid;
   grid-auto-flow: column;
@@ -15,16 +14,12 @@ const Nav = styled.div`
 
   background: #282a36;
   color: #f8f8f2;
+  border-bottom: 3px solid #ff79c6;
 `;
 
 function Navbar() {
   return (
     <Nav>
-      <p>Books</p>
-      <p>Books</p>
-      <p>Books</p>
-      <p>Books</p>
-      <p>Books</p>
       <p>Books</p>
     </Nav>
   );

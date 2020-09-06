@@ -5,7 +5,10 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 500px;
   justify-content: center;
-  grid-gap: 10px;
+  height: 100%;
+  background: #282a36;
+  align-items: start;
+  padding-top: 30px;
 `;
 
 export default function CenteredContainer({ children }) {
