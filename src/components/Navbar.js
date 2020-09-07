@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  height: 60px;
   padding: 0 20px;
 
   display: grid;

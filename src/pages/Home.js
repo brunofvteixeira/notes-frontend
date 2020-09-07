@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 
 import CenteredContainer from '../components/CenteredContainer';
 import BookBanner from '../components/BookBanner';
 import DefaultPage from '../components/DefaultPage';
-
-// import { getAllBooks } from '../services/api';
-
-const BooksContainer = styled.div`
-  display: grid;
-  grid-gap: 20px;
-`;
+import BooksContainer from '../components/BooksContainer';
 
 export default function Home() {
   const [books, setBooks] = useState([]);
@@ -25,12 +18,16 @@ export default function Home() {
     //   });
     const placeholder = [
       {
+        id: 1,
         title: 'Cristianismo Puro e Simples',
         author: 'C.S. Lewis',
+        total_notes: 100,
       },
       {
+        id: 2,
         title: 'Crime e Castigo',
         author: 'Fiódor Dostoiévski',
+        total_notes: 26,
       },
     ];
 
@@ -43,7 +40,13 @@ export default function Home() {
         <BooksContainer>
           {books
             ? books.map(book => (
-                <BookBanner title={book.title} author={book.author} />
+                <BookBanner
+                  key={book.id}
+                  id={book.id}
+                  title={book.title}
+                  author={book.author}
+                  totalNotes={book.total_notes}
+                />
               ))
             : null}
         </BooksContainer>
