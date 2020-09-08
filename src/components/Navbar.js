@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import NavLink from './NavLink';
 
 const Nav = styled.nav`
-  padding: 0 20px;
   height: 50px;
 
   display: grid;
