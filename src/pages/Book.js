@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import CenteredContainer from '../components/CenteredContainer';
 import DefaultPage from '../components/DefaultPage';
+import BookPageLayout from '../components/BookPageLayout';
+import BookInfo from '../components/BookInfo';
 
 import { getBookById } from '../services/api';
 
@@ -20,7 +22,11 @@ function Book({ id }) {
 
   return (
     <DefaultPage>
-      <CenteredContainer>{book.title || 'null'}</CenteredContainer>
+      <CenteredContainer>
+        <BookPageLayout>
+          <BookInfo>{book.title || 'null'}</BookInfo>
+        </BookPageLayout>
+      </CenteredContainer>
     </DefaultPage>
   );
 }

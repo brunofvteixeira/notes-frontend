@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import CenteredContainer from '../components/CenteredContainer';
 import BookBanner from '../components/BookBanner';
 import DefaultPage from '../components/DefaultPage';
-import BooksContainer from '../components/BooksContainer';
+import BooksListContainer from '../components/BooksListContainer';
 
-export default function Home() {
+export default function BooksList() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <DefaultPage>
       <CenteredContainer>
-        <BooksContainer>
+        <BooksListContainer>
           {books
             ? books.map(book => (
                 <BookBanner
@@ -49,7 +49,7 @@ export default function Home() {
                 />
               ))
             : null}
-        </BooksContainer>
+        </BooksListContainer>
       </CenteredContainer>
     </DefaultPage>
   );

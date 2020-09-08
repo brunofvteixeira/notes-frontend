@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import NavLink from './NavLink';
 
 const Nav = styled.nav`
   padding: 0 20px;
+  height: 50px;
 
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: auto;
   justify-content: start;
   align-items: center;
-  grid-gap: 40px;
 
   background: #282a36;
   color: #f8f8f2;
@@ -19,7 +20,8 @@ const Nav = styled.nav`
 function Navbar() {
   return (
     <Nav>
-      <p>Books</p>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/b">Books</NavLink>
     </Nav>
   );
 }
