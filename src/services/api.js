@@ -10,3 +10,5 @@ const instance = axios.create({
 export const getAllBooks = () => instance.get(`/b`);
 
 export const getBookById = id => instance.get(`/b/${id}`);
+
+export const postNewNote = note => instance.post(`/n`, note);

@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   grid-area: main;
-  background: white;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+
+  /* background: #155aa2; */
 `;
 
 function BookInfo({ children }) {

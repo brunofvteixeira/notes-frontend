@@ -6,10 +6,12 @@ import Footer from './Footer';
 const Container = styled.div`
   height: calc(100vh);
 
-  background: #282a36;
-
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-gap: 30px;
+
+  background: #282a36;
+  overflow: auto;
 `;
 
 function DefaultPage({ children }) {
