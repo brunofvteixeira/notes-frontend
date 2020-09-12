@@ -4,10 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   grid-area: main;
   display: grid;
-  justify-content: center;
+  grid-auto-columns: 1fr;
   align-content: start;
-
-  /* background: #155aa2; */
 `;
 
 function BookInfo({ children }) {

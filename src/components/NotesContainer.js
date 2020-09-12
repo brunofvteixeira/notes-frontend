@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: grid;
   grid-gap: 20px;
-  justify-content: center;
+  justify-content: start;
 `;
 
 function NotesContainer({ children }) {

@@ -10,7 +10,7 @@ const Component = styled.textarea`
 
   background: ${props => props.background || '#44475a'};
   color: ${props => props.color || '#f8f8f2'};
-  width: ${props => props.width || '500px'};
+  width: ${props => props.width || 'calc(70%)'};
   height: ${props => props.height || '150px'};
   font-size: ${props => props.fontSize || '1.1em'};
 
