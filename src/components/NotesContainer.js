@@ -5,6 +5,7 @@ const Container = styled.div`
   display: grid;
   grid-gap: 20px;
   justify-content: start;
+  grid-template-columns: 1fr;
 `;
 
 function NotesContainer({ children }) {
